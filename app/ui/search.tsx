@@ -7,7 +7,7 @@ import { useQueryState } from 'nuqs';
 export default function Search({ placeholder }: { placeholder: string }) {
   const [query, setQuery] = useQueryState('query', {
     shallow: false,
-    throttleMs: 1000,
+    throttleMs: 300,
   });
 
   // const searchParams = useSearchParams();
